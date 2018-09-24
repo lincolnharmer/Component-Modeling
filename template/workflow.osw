@@ -1,0 +1,31 @@
+{
+   "created_at" : "20180718T042713Z",
+   "seed_file" : "../template.osm",
+   "steps" : [
+      {
+         "arguments" : {},
+         "description" : "",
+         "measure_dir_name" : "CreateBaselineFromPrototypeBuilding",
+         "modeler_description" : "",
+         "name" : "Create Baseline From Prototype Building"
+      },
+      {
+         "arguments" : {
+            "source_idf_path" : "C:/Users/Public/Documents/template/run/000_CreateBaselineFromPrototypeBuilding/scheduledLoads.ems"
+         },
+         "description" : "This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus.",
+         "measure_dir_name" : "inject_idf_ojbects",
+         "modeler_description" : "This provides a stepping stone between exporting an IDF from OpenStudio and hand editing the IDF and writing fully functional OpenStudio EnergyPlus measures.\r\r\n\r\r\nThis measure works for when you just need to add new IDF objects. If you need to interact with or alter IDF objects made by the OpenStudio forward translator, you will want to write an EnergyPlus measure wtih more use-case specific logic.",
+         "name" : " Inject IDF Ojbects"
+      },
+      {
+         "arguments" : {},
+         "description" : "This measure creates high level tables and charts pulling both from model inputs and EnergyPlus results. It has building level information as well as detail on space types, thermal zones, HVAC systems, envelope characteristics, and economics. Click the heading above a chart to view a table of the chart data.",
+         "measure_dir_name" : "OpenStudioResults",
+         "modeler_description" : "For the most part consumption data comes from the tabular EnergyPlus results, however there are a few requests added for time series results. Space type and loop details come from the OpenStudio model. The code for this is modular, making it easy to use as a template for your own custom reports. The structure of the report uses bootstrap, and the graphs use dimple js.",
+         "name" : "OpenStudio Results"
+      }
+   ],
+   "updated_at" : "20180718T142851Z",
+   "weather_file" : "USA_UT_Salt.Lake.City.Intl.AP.725720_TMY3.epw"
+}

@@ -1,0 +1,2625 @@
+
+OS:Version,
+  {19fd9de5-90b0-4c41-8183-e2d9d8e09df0}, !- Handle
+  2.5.0;                                  !- Version Identifier
+
+OS:Rendering:Color,
+  {d1e86687-6885-4070-81da-3a576f17ff5c}, !- Handle
+  Rendering Color 1,                      !- Name
+  230,                                    !- Rendering Red Value
+  157,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:ScheduleTypeLimits,
+  {af9d9c36-2d5f-4871-8dda-ff179c7ff3db}, ! Handle
+  Fraction,                               ! Name
+  0,                                      ! Lower Limit Value
+  1,                                      ! Upper Limit Value
+  CONTINUOUS;                             ! Numeric Type
+
+OS:DesignSpecification:OutdoorAir,
+  {67f2822d-9200-410d-bad4-ca1adb4cbb77}, !- Handle
+  189.1-2009 - Office - BreakRoom - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.007079211648,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ScheduleTypeLimits,
+  {65bf6a03-1758-4903-8383-db583a09d8f8}, !- Handle
+  ActivityLevel,                          !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  ActivityLevel;                          !- Unit Type
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {57716514-0d5c-4f76-8108-73a8ef55c74a}, !- Handle
+  189.1-2009 - Office - BreakRoom - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:ScheduleTypeLimits,
+  {12c61fd1-4fe2-4b95-9432-26b57b327856}, !- Handle
+  Temperature 36,                         !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {7e87320c-a0b8-49c9-bbc8-d0b2f472ac54}, !- Handle
+  Temperature 37,                         !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Rendering:Color,
+  {a57916a4-2d44-41b9-a1e1-917f01e6e980}, !- Handle
+  Rendering Color 2,                      !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {f46c6550-abd3-4dc9-b2fd-3521e6458afe}, !- Handle
+  189.1-2009 - Office - ClosedOffice - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {b27de14f-0cdf-4395-80f3-859d49e9b403}, !- Handle
+  189.1-2009 - Office - ClosedOffice - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {ec05571d-f09e-46c5-830e-02e7c83716e2}, !- Handle
+  Rendering Color 3,                      !- Name
+  230,                                    !- Rendering Red Value
+  196,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {a1ac4f23-b7fd-439b-9144-9025bbf81b99}, !- Handle
+  189.1-2009 - Office - Conference - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {9c5a236d-b8fa-4e61-a6d6-5ef82442b61b}, !- Handle
+  189.1-2009 - Office - Conference - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {9637cafc-bc8f-40aa-8756-39cbbba37ac4}, !- Handle
+  Rendering Color 4,                      !- Name
+  169,                                    !- Rendering Red Value
+  31,                                     !- Rendering Green Value
+  31;                                     !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {43c2eb8f-ca41-472d-a661-37d29e1aa470}, !- Handle
+  189.1-2009 - Office - Corridor - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {52549264-a360-4f7a-971d-ec4f2499546a}, !- Handle
+  189.1-2009 - Office - Corridor - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {8a8c0cb1-8336-469c-bca4-e17997f803bb}, !- Handle
+  Rendering Color 5,                      !- Name
+  41,                                     !- Rendering Red Value
+  31,                                     !- Rendering Green Value
+  169;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {69d02fbd-3b65-4514-8330-355612e92de3}, !- Handle
+  189.1-2009 - Office - Elec/MechRoom - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {f8635cc8-deee-4e85-815b-ff7f42668c83}, !- Handle
+  189.1-2009 - Office - Elec/MechRoom - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {20b4e546-0bb5-45c4-b8f0-ba4246a49c01}, !- Handle
+  Rendering Color 6,                      !- Name
+  41,                                     !- Rendering Red Value
+  31,                                     !- Rendering Green Value
+  169;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {2f4b0680-26b1-4103-9f70-412db3ebdfbe}, !- Handle
+  189.1-2009 - Office - IT_Room - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {7669758f-56e6-4440-9266-ef142961841f}, !- Handle
+  189.1-2009 - Office - IT_Room - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {0e5a132c-e7c3-4583-ad5a-cf0bf0fe2d03}, !- Handle
+  Rendering Color 7,                      !- Name
+  230,                                    !- Rendering Red Value
+  157,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {f648ca0a-523e-4cd1-9141-0b84b7a81954}, !- Handle
+  189.1-2009 - Office - Lobby - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.007079211648,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {f63de19d-9cf2-4162-bf2f-bdb7fddc1b7d}, !- Handle
+  189.1-2009 - Office - Lobby - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {e1b28003-ba15-4183-b5d9-585f72709eff}, !- Handle
+  Rendering Color 8,                      !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {f57d4115-03b8-4303-b205-42221bda4210}, !- Handle
+  189.1-2009 - Office - OpenOffice - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {b88ada7e-5b66-4c29-8b49-7f9040c59933}, !- Handle
+  189.1-2009 - Office - OpenOffice - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Building,
+  {f73b031c-bb31-4fa0-ad96-2e9846c4d752}, !- Handle
+  Component Modeling Template,            !- Name
+  ,                                       !- Building Sector Type
+  ,                                       !- North Axis {deg}
+  ,                                       !- Nominal Floor to Floor Height {m}
+  ,                                       !- Space Type Name
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  ,                                       !- Standards Number of Stories
+  ,                                       !- Standards Number of Above Ground Stories
+  ,                                       !- Standards Building Type
+  ,                                       !- Standards Number of Living Units
+  ,                                       !- Relocatable
+  ;                                       !- Nominal Floor to Ceiling Height {m}
+
+OS:Rendering:Color,
+  {061734ce-19f4-4c27-a203-4b67b00d47ac}, !- Handle
+  Rendering Color 9,                      !- Name
+  41,                                     !- Rendering Red Value
+  31,                                     !- Rendering Green Value
+  169;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {107e2dcf-081d-47d9-b8b0-921f5279392b}, !- Handle
+  189.1-2009 - Office - PrintRoom - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {cb7fb571-b062-476f-8b81-9ee2aa7be729}, !- Handle
+  189.1-2009 - Office - PrintRoom - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {e64f5cb7-2c3d-45a9-84a6-367125f15aff}, !- Handle
+  Rendering Color 10,                     !- Name
+  169,                                    !- Rendering Red Value
+  169,                                    !- Rendering Green Value
+  31;                                     !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {65cf1445-a2aa-42ad-9ff8-c4b30ec4e53d}, !- Handle
+  189.1-2009 - Office - Restroom - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.0048768,                              !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {36f7e68a-a20c-471b-b929-d4756cba022f}, !- Handle
+  189.1-2009 - Office - Restroom - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {d956b768-7de2-4589-97c3-e0178f40b773}, !- Handle
+  Rendering Color 11,                     !- Name
+  230,                                    !- Rendering Red Value
+  157,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {65e99483-2d7e-4ca8-9e0d-a7914f938f56}, !- Handle
+  189.1-2009 - Office - Stair - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {8f2a6abe-ef82-4cf6-9a19-42526787c24e}, !- Handle
+  189.1-2009 - Office - Stair - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {40564289-28c7-4fd8-b822-fe7139d1f5bf}, !- Handle
+  Rendering Color 12,                     !- Name
+  120,                                    !- Rendering Red Value
+  149,                                    !- Rendering Green Value
+  230;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {99330741-43bc-49e4-9991-d6cf4a0ba4aa}, !- Handle
+  189.1-2009 - Office - Storage - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {f8e65471-7105-4908-ae0b-ec42ae5587b5}, !- Handle
+  189.1-2009 - Office - Storage - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {cf88ad3d-58c9-452c-88c4-ac7ea371f930}, !- Handle
+  Rendering Color 13,                     !- Name
+  230,                                    !- Rendering Red Value
+  157,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {6dbe4189-6232-4d6e-9ac9-63d6e0ee9668}, !- Handle
+  189.1-2009 - Office - Vending - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {de4444a1-34f5-4cf5-ac22-7469b7be466d}, !- Handle
+  189.1-2009 - Office - Vending - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {6fc91438-7cba-42dc-a37d-48434d3c06ca}, !- Handle
+  Rendering Color 14,                     !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:ScheduleTypeLimits,
+  {55c44e2f-3c81-40b0-84f7-9b6efa1c1036}, !- Handle
+  Fractional,                             !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Continuous;                             !- Numeric Type
+
+OS:DesignSpecification:OutdoorAir,
+  {b1c52cb5-3326-4b43-a12f-f30cb1ac3119}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Lg Office - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ScheduleTypeLimits,
+  {d29d6f61-dbb6-43a0-8e80-994bfb4a73b2}, !- Handle
+  ActivityLevel 5,                        !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  ActivityLevel;                          !- Unit Type
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {2e5bfd45-be53-46a2-a1be-badb1d1f9ae8}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Lg Office - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:ScheduleTypeLimits,
+  {81589aa3-85f3-4555-b92c-d10e45fa9ee1}, !- Handle
+  Temperature 3,                          !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Handle
+  Temperature 5,                          !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Rendering:Color,
+  {03e06c9d-a4bc-49de-952a-4329faa7fb71}, !- Handle
+  Rendering Color 15,                     !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {8f13e24f-0968-430b-82b1-c5e41da9fafa}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Md Office - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ScheduleTypeLimits,
+  {95269861-8fab-46f9-aa04-a6e9bad28f6a}, !- Handle
+  ActivityLevel 13,                       !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  ActivityLevel;                          !- Unit Type
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {6c8f1b66-79b0-4494-bb62-0e6ab336934b}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Md Office - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {acb4804a-6b98-49bc-8337-c128f3c2ea30}, !- Handle
+  Rendering Color 16,                     !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {6410e886-4201-485e-a1a7-5fa1c8b6bdf4}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Sm Office - CZ1-3 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ScheduleTypeLimits,
+  {ab8bd902-d0dc-41a0-936a-32afa4684057}, !- Handle
+  ActivityLevel 12,                       !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  ActivityLevel;                          !- Unit Type
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {0488857a-ac36-457e-bf08-09bfa412ba46}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Sm Office - CZ1-3 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:ScheduleTypeLimits,
+  {0e9a66b1-0d84-4b86-b6d1-08ec793ba821}, !- Handle
+  Temperature 11,                         !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {c998de07-a854-476f-88ee-694f57ede232}, !- Handle
+  Temperature 4,                          !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Rendering:Color,
+  {99b31bfd-0d42-45f4-a0d8-d4817aca24ae}, !- Handle
+  Rendering Color 17,                     !- Name
+  230,                                    !- Rendering Red Value
+  157,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {f6d5ea3e-58cf-41e5-81fb-02117411a981}, !- Handle
+  189.1-2009 - Office - BreakRoom - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.007079211648,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {92dbe6d3-c9b9-43fc-90c3-a06b5ec93169}, !- Handle
+  189.1-2009 - Office - BreakRoom - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {6dc82c65-0965-48c5-9394-1f57bef18075}, !- Handle
+  Rendering Color 18,                     !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {2cbf38dd-78ec-43cf-9455-8dba2eee1857}, !- Handle
+  189.1-2009 - Office - ClosedOffice - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {6b3eff15-c2f8-4f87-9fe3-6f7c3004ea5f}, !- Handle
+  189.1-2009 - Office - ClosedOffice - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {202e2808-fe0a-49ec-8437-4c794472a9a0}, !- Handle
+  Rendering Color 19,                     !- Name
+  230,                                    !- Rendering Red Value
+  196,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {b8c9a3c5-53fb-4331-9614-87a518236f35}, !- Handle
+  189.1-2009 - Office - Conference - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {541fa24b-ddf2-4edf-83d9-2bed06917add}, !- Handle
+  189.1-2009 - Office - Conference - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {340eeae9-9587-4e04-b7fe-21214fa0042c}, !- Handle
+  Rendering Color 20,                     !- Name
+  169,                                    !- Rendering Red Value
+  31,                                     !- Rendering Green Value
+  31;                                     !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {fd69f378-0e94-4fdd-a231-f37cf315cc66}, !- Handle
+  189.1-2009 - Office - Corridor - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {3bdf0199-3196-4d00-9272-a3b137675d31}, !- Handle
+  189.1-2009 - Office - Corridor - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {09cc0a44-bde3-4ae8-97d5-6973b620eb23}, !- Handle
+  Rendering Color 21,                     !- Name
+  41,                                     !- Rendering Red Value
+  31,                                     !- Rendering Green Value
+  169;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {1fbee130-5b8b-41c4-b2e5-a35b678e1a1c}, !- Handle
+  189.1-2009 - Office - Elec/MechRoom - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {bc8bbc76-ab44-4992-ad1d-80d2dbc7e77e}, !- Handle
+  189.1-2009 - Office - Elec/MechRoom - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {03a758bb-e62a-48b9-97b4-e7c9725503de}, !- Handle
+  Rendering Color 22,                     !- Name
+  41,                                     !- Rendering Red Value
+  31,                                     !- Rendering Green Value
+  169;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {c78ecc49-33c1-4baa-8f4a-3a3d4e3253e7}, !- Handle
+  189.1-2009 - Office - IT_Room - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {d067df76-cf76-4cf6-aa35-0cbb12b8656a}, !- Handle
+  189.1-2009 - Office - IT_Room - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {74dc8dad-959b-491c-a50a-9af6ecd0a669}, !- Handle
+  Rendering Color 23,                     !- Name
+  230,                                    !- Rendering Red Value
+  157,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {dbdfd940-1c36-4bd0-afb4-880a785c5e6f}, !- Handle
+  189.1-2009 - Office - Lobby - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.007079211648,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {3fabcd0e-e1a5-4e00-9e23-9e19d5c555d9}, !- Handle
+  189.1-2009 - Office - Lobby - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:SpaceType,
+  {ad9972e4-489e-404e-841e-c9bbd72d0111}, !- Handle
+  zone heat,                              !- Name
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  {ede0a72d-692f-411e-898f-ccb1f783c262}, !- Group Rendering Name
+  {199de3a4-3b65-4c41-9bf4-a377f1c809bf}, !- Design Specification Outdoor Air Object Name
+  Office,                                 !- Standards Building Type
+  OpenOffice;                             !- Standards Space Type
+
+OS:Rendering:Color,
+  {ede0a72d-692f-411e-898f-ccb1f783c262}, !- Handle
+  Rendering Color 24,                     !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {f4a649b7-7f7c-4bc5-9b02-e4e1aa4803e9}, !- Handle
+  Total Building Supply Air Flow,         !- Name
+  Sum,                                    !- Outdoor Air Method
+  0,                                      !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  33.036321024,                           !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  {09b6694a-947a-4e02-932f-1f5ed006cef1}; !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {847f379b-0ddb-4308-a125-44b06cceb0c0}, !- Handle
+  189.1-2009 - Office - OpenOffice - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {b7fe6f07-3ac4-4ca1-9186-5c7889d7b3da}, !- Handle
+  Rendering Color 25,                     !- Name
+  41,                                     !- Rendering Red Value
+  31,                                     !- Rendering Green Value
+  169;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {6c78e848-e562-4461-b538-4e3e3c4e848c}, !- Handle
+  189.1-2009 - Office - PrintRoom - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {9a24efdb-aaf9-4caf-8ef9-e063f557395c}, !- Handle
+  189.1-2009 - Office - PrintRoom - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {719a1449-7853-4161-927b-bdb7f01806ed}, !- Handle
+  Rendering Color 26,                     !- Name
+  169,                                    !- Rendering Red Value
+  169,                                    !- Rendering Green Value
+  31;                                     !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {1aeb672d-5c17-4118-b3f0-dfbc58007e1f}, !- Handle
+  189.1-2009 - Office - Restroom - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.0048768,                              !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {ec97771e-4971-46b0-91e9-3785d44f364f}, !- Handle
+  189.1-2009 - Office - Restroom - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {6f557e2a-06b2-4e96-bd62-f7b1f6d0b22c}, !- Handle
+  Rendering Color 27,                     !- Name
+  230,                                    !- Rendering Red Value
+  157,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {06eb26bf-daae-4d7b-802f-f14f4973bffc}, !- Handle
+  189.1-2009 - Office - Stair - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {e23342a6-14bf-4244-a12e-b8f3f6c04563}, !- Handle
+  189.1-2009 - Office - Stair - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {e5e5daee-9c0f-481c-8a95-52831d130704}, !- Handle
+  Rendering Color 28,                     !- Name
+  120,                                    !- Rendering Red Value
+  149,                                    !- Rendering Green Value
+  230;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {891b5948-4e38-4554-a2f6-43f94ec5ae02}, !- Handle
+  189.1-2009 - Office - Storage - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {6ae2b2b8-720b-4eaf-8895-80b1f0753cad}, !- Handle
+  189.1-2009 - Office - Storage - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {76d6f7c9-7ceb-45e9-8a19-835ab84a952b}, !- Handle
+  Rendering Color 29,                     !- Name
+  230,                                    !- Rendering Red Value
+  157,                                    !- Rendering Green Value
+  120;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {0f1e8aef-c843-4ab6-b548-4c72c5fef55a}, !- Handle
+  189.1-2009 - Office - Vending - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  0.000254,                               !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {6c78a447-312c-4c28-b3aa-6da71f9cf8d3}, !- Handle
+  189.1-2009 - Office - Vending - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {a76d196b-e761-4493-8631-b48b5e34c13c}, !- Handle
+  Rendering Color 30,                     !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {243951cc-1d54-4682-88de-92f00facb5d4}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Lg Office - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {2829a6a3-d557-49c2-883a-6f3c5888d3dc}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Lg Office - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {d962ce0f-1f09-4520-8086-d251309638ff}, !- Handle
+  Rendering Color 31,                     !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {3157c89d-76b6-49f9-b874-c887b361d5a2}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Md Office - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {125be356-b9df-4681-bbaa-d4c8cacde878}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Md Office - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Rendering:Color,
+  {2fd05332-007b-4350-8fd3-4733ddca3f69}, !- Handle
+  Rendering Color 32,                     !- Name
+  120,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  199;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {22c007c1-ce62-40f2-8ab0-14c6a644baf2}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Sm Office - CZ4-8 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {7d3d60df-38bd-402a-8cc6-cb780862d808}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Sm Office - CZ4-8 Thermostat, !- Name
+  ,                                       !- Heating Setpoint Temperature Schedule Name
+  ;                                       !- Cooling Setpoint Temperature Schedule Name
+
+OS:Construction,
+  {4ee71df9-85c1-4a24-9be8-bee433f9e015}, !- Handle
+  Interior Floor,                         !- Name
+  {aaf99c0f-d381-4879-b229-6c09c91be1a0}, !- Surface Rendering Name
+  {9732ca82-5b07-4b63-b379-a76d13f9d0d2}, !- Layer 1
+  {c7326da9-9b42-4f08-b9c2-710e29f1df68}, !- Layer 2
+  {5b28cd98-6ada-46e3-ab5c-8ce18c82e2e4}; !- Layer 3
+
+OS:StandardsInformation:Construction,
+  {663cbab6-e62e-4117-aefb-5a2c9b9cd1b3}, !- Handle
+  {4ee71df9-85c1-4a24-9be8-bee433f9e015}, !- Construction Name
+  InteriorFloor,                          !- Intended Surface Type
+  ;                                       !- Standards Construction Type
+
+OS:Material,
+  {9732ca82-5b07-4b63-b379-a76d13f9d0d2}, !- Handle
+  F16 Acoustic tile,                      !- Name
+  MediumSmooth,                           !- Roughness
+  0.0191,                                 !- Thickness {m}
+  0.06,                                   !- Conductivity {W/m-K}
+  368,                                    !- Density {kg/m3}
+  590.000000000002,                       !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.3,                                    !- Solar Absorptance
+  0.3;                                    !- Visible Absorptance
+
+OS:Material:AirGap,
+  {c7326da9-9b42-4f08-b9c2-710e29f1df68}, !- Handle
+  F05 Ceiling air space resistance,       !- Name
+  0.18;                                   !- Thermal Resistance {m2-K/W}
+
+OS:Material,
+  {5b28cd98-6ada-46e3-ab5c-8ce18c82e2e4}, !- Handle
+  M11 100mm lightweight concrete,         !- Name
+  MediumRough,                            !- Roughness
+  0.1016,                                 !- Thickness {m}
+  0.53,                                   !- Conductivity {W/m-K}
+  1280,                                   !- Density {kg/m3}
+  840.000000000002,                       !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.5,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+OS:Construction,
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Handle
+  Interior Wall,                          !- Name
+  {4cf55abe-2d71-47fd-80bf-50acf9255ff2}, !- Surface Rendering Name
+  {2dde63ec-8c12-47e9-a694-a5c55907b2a7}, !- Layer 1
+  {205d1797-4786-41aa-bb49-c62de03322d9}, !- Layer 2
+  {2dde63ec-8c12-47e9-a694-a5c55907b2a7}; !- Layer 3
+
+OS:StandardsInformation:Construction,
+  {bf9c6bdf-1d79-4160-843a-67a65bd63099}, !- Handle
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  InteriorWall,                           !- Intended Surface Type
+  ;                                       !- Standards Construction Type
+
+OS:Material,
+  {2dde63ec-8c12-47e9-a694-a5c55907b2a7}, !- Handle
+  G01a 19mm gypsum board,                 !- Name
+  MediumSmooth,                           !- Roughness
+  0.019,                                  !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  800,                                    !- Density {kg/m3}
+  1090,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.4,                                    !- Solar Absorptance
+  0.4;                                    !- Visible Absorptance
+
+OS:Material:AirGap,
+  {205d1797-4786-41aa-bb49-c62de03322d9}, !- Handle
+  F04 Wall air space resistance,          !- Name
+  0.15;                                   !- Thermal Resistance {m2-K/W}
+
+OS:Construction,
+  {edd9ecd3-4290-4d56-b5a9-ef02bf102418}, !- Handle
+  Interior Ceiling,                       !- Name
+  {8831bcba-183b-4757-b17a-7219047e131d}, !- Surface Rendering Name
+  {5b28cd98-6ada-46e3-ab5c-8ce18c82e2e4}, !- Layer 1
+  {c7326da9-9b42-4f08-b9c2-710e29f1df68}, !- Layer 2
+  {9732ca82-5b07-4b63-b379-a76d13f9d0d2}; !- Layer 3
+
+OS:StandardsInformation:Construction,
+  {ebe3b12b-5ab0-4ea3-a460-6d15ad1d838c}, !- Handle
+  {edd9ecd3-4290-4d56-b5a9-ef02bf102418}, !- Construction Name
+  InteriorCeiling,                        !- Intended Surface Type
+  ;                                       !- Standards Construction Type
+
+OS:Site,
+  {a681498a-85e7-4863-8e88-41de132f72a1}, !- Handle
+  Salt Lake City IntL Arpt  Isis,         !- Name
+  40.77,                                  !- Latitude {deg}
+  -111.97,                                !- Longitude {deg}
+  -7,                                     !- Time Zone {hr}
+  1288,                                   !- Elevation {m}
+  ;                                       !- Terrain
+
+OS:YearDescription,
+  {40462d92-afed-48a4-8b77-5a2443b8826e}, !- Handle
+  ,                                       !- Calendar Year
+  Sunday;                                 !- Day of Week for Start Day
+
+OS:ClimateZones,
+  {b6ae842a-4e61-4f54-8e8d-daf083d7d71d}, !- Handle
+  ,                                       !- Active Institution
+  ,                                       !- Active Year
+  ASHRAE,                                 !- Climate Zone Institution Name 1
+  ANSI/ASHRAE Standard 169,               !- Climate Zone Document Name 1
+  2006,                                   !- Climate Zone Document Year 1
+  ,                                       !- Climate Zone Value 1
+  CEC,                                    !- Climate Zone Institution Name 2
+  California Climate Zone Descriptions,   !- Climate Zone Document Name 2
+  1995,                                   !- Climate Zone Document Year 2
+  ;                                       !- Climate Zone Value 2
+
+OS:Facility,
+  {ad7ce0d2-1a17-410d-8427-12d480e80eb7}; !- Handle
+
+OS:LifeCycleCost:Parameters,
+  {7bd2cd18-ae00-4e9f-8dbc-af83cea58a21}, !- Handle
+  ,                                       !- Analysis Type
+  ,                                       !- Discounting Convention
+  ,                                       !- Inflation Approach
+  ,                                       !- Real Discount Rate
+  ,                                       !- Nominal Discount Rate
+  ,                                       !- Inflation
+  ,                                       !- Base Date Month
+  ,                                       !- Base Date Year
+  ,                                       !- Service Date Month
+  ,                                       !- Service Date Year
+  ;                                       !- Length of Study Period in Years
+
+OS:Rendering:Color,
+  {4cada5ad-ac68-4a10-9c47-3d6d0714a9e1}, !- Handle
+  Rendering Color 33,                     !- Name
+  255,                                    !- Rendering Red Value
+  250,                                    !- Rendering Green Value
+  205;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {1374958b-7b23-409d-9c23-08a8ba077227}, !- Handle
+  Rendering Color 34,                     !- Name
+  47,                                     !- Rendering Red Value
+  79,                                     !- Rendering Green Value
+  79;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {800e4211-1014-40a3-a534-1bf5265e4cf1}, !- Handle
+  Rendering Color 35,                     !- Name
+  245,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  250;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {1aebc1ab-7059-48ba-b6d9-19f67950aaca}, !- Handle
+  Rendering Color 36,                     !- Name
+  85,                                     !- Rendering Red Value
+  107,                                    !- Rendering Green Value
+  47;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {f9ee89e4-443b-41e7-972e-3f2ff75e643b}, !- Handle
+  Rendering Color 37,                     !- Name
+  50,                                     !- Rendering Red Value
+  205,                                    !- Rendering Green Value
+  50;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {b9f17072-bc80-424a-bc66-561a62c86a8a}, !- Handle
+  Rendering Color 38,                     !- Name
+  0,                                      !- Rendering Red Value
+  100,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {1a4953e9-8a72-4f6f-b86b-2d7a316b57eb}, !- Handle
+  Rendering Color 39,                     !- Name
+  255,                                    !- Rendering Red Value
+  182,                                    !- Rendering Green Value
+  193;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {3abd7a4a-bb93-41f2-9ea3-9fa89e36cecb}, !- Handle
+  Rendering Color 40,                     !- Name
+  178,                                    !- Rendering Red Value
+  34,                                     !- Rendering Green Value
+  34;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {11fa5360-bf62-42dc-a1fb-cee7c6e2e2b9}, !- Handle
+  Rendering Color 41,                     !- Name
+  248,                                    !- Rendering Red Value
+  248,                                    !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {8831bcba-183b-4757-b17a-7219047e131d}, !- Handle
+  Rendering Color 42,                     !- Name
+  139,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {cbdc2dd4-d481-400c-a87a-72226240201e}, !- Handle
+  Rendering Color 43,                     !- Name
+  0,                                      !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {d72c6e7e-83b3-453d-a634-37ead5bfbc8e}, !- Handle
+  Rendering Color 44,                     !- Name
+  50,                                     !- Rendering Red Value
+  205,                                    !- Rendering Green Value
+  50;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {fc256963-cea6-4785-bab4-fdad5cadc34b}, !- Handle
+  Rendering Color 45,                     !- Name
+  210,                                    !- Rendering Red Value
+  180,                                    !- Rendering Green Value
+  140;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {aaf99c0f-d381-4879-b229-6c09c91be1a0}, !- Handle
+  Rendering Color 46,                     !- Name
+  250,                                    !- Rendering Red Value
+  250,                                    !- Rendering Green Value
+  210;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {1cc0f81f-744d-4435-a9d1-c385df899a13}, !- Handle
+  Rendering Color 47,                     !- Name
+  0,                                      !- Rendering Red Value
+  206,                                    !- Rendering Green Value
+  209;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {7bea3f2f-a9fa-423d-8035-f96f7e9853bc}, !- Handle
+  Rendering Color 48,                     !- Name
+  255,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  240;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {7b57dc70-70f5-4df0-8777-01691ad89d8a}, !- Handle
+  Rendering Color 49,                     !- Name
+  221,                                    !- Rendering Red Value
+  160,                                    !- Rendering Green Value
+  221;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {72ae97ed-e942-422d-9af1-d45aeda2d24d}, !- Handle
+  Rendering Color 50,                     !- Name
+  192,                                    !- Rendering Red Value
+  192,                                    !- Rendering Green Value
+  192;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {eb58a3da-c750-4c06-bc87-51d84be619a5}, !- Handle
+  Rendering Color 51,                     !- Name
+  245,                                    !- Rendering Red Value
+  245,                                    !- Rendering Green Value
+  245;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {b6160058-b8ff-4cec-b064-a1fb02744a58}, !- Handle
+  Rendering Color 52,                     !- Name
+  255,                                    !- Rendering Red Value
+  228,                                    !- Rendering Green Value
+  225;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {7c65bbfd-6602-443b-b56e-ac4d2f82f670}, !- Handle
+  Rendering Color 53,                     !- Name
+  0,                                      !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  139;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {f6880165-38d9-41b1-9e50-67e87325737c}, !- Handle
+  Rendering Color 54,                     !- Name
+  32,                                     !- Rendering Red Value
+  178,                                    !- Rendering Green Value
+  170;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {98435585-0c16-4d42-969b-5bf93820040b}, !- Handle
+  Rendering Color 55,                     !- Name
+  219,                                    !- Rendering Red Value
+  112,                                    !- Rendering Green Value
+  147;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {892ce6b8-418c-48d8-95d6-51a05b1d4387}, !- Handle
+  Rendering Color 56,                     !- Name
+  165,                                    !- Rendering Red Value
+  42,                                     !- Rendering Green Value
+  42;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {939d8dea-1038-4265-990d-0a693f16288d}, !- Handle
+  Rendering Color 57,                     !- Name
+  0,                                      !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {4cf55abe-2d71-47fd-80bf-50acf9255ff2}, !- Handle
+  Rendering Color 58,                     !- Name
+  186,                                    !- Rendering Red Value
+  85,                                     !- Rendering Green Value
+  211;                                    !- Rendering Blue Value
+
+OS:BuildingStory,
+  {8541a0eb-1653-434c-a3b9-c655bfa1652d}, !- Handle
+  Building Story 1,                       !- Name
+  0,                                      !- Nominal Z Coordinate {m}
+  3.048,                                  !- Nominal Floor to Floor Height {m}
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  {3acdd20f-f203-4f10-9f56-0a59132da355}; !- Group Rendering Name
+
+OS:Space,
+  {1ae27b33-fa21-4b05-8624-d1fb221f079b}, !- Handle
+  heat zone,                              !- Name
+  {ad9972e4-489e-404e-841e-c9bbd72d0111}, !- Space Type Name
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  ,                                       !- Direction of Relative North {deg}
+  6.096,                                  !- X Origin {m}
+  0,                                      !- Y Origin {m}
+  0,                                      !- Z Origin {m}
+  {8541a0eb-1653-434c-a3b9-c655bfa1652d}, !- Building Story Name
+  {5dbc5059-d10b-4cf6-9b02-ebfe4d1f5fb8}, !- Thermal Zone Name
+  ,                                       !- Part of Total Floor Area
+  ;                                       !- Design Specification Outdoor Air Object Name
+
+OS:Surface,
+  {a700651e-a78c-43ab-832d-678a93bd1b84}, !- Handle
+  Surface 1,                              !- Name
+  Floor,                                  !- Surface Type
+  {4ee71df9-85c1-4a24-9be8-bee433f9e015}, !- Construction Name
+  {1ae27b33-fa21-4b05-8624-d1fb221f079b}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, 6.096, 0,                            !- X,Y,Z Vertex 1 {m}
+  0, 0, 0,                                !- X,Y,Z Vertex 2 {m}
+  -6.096, 0, 0,                           !- X,Y,Z Vertex 3 {m}
+  -6.096, 6.096, 0;                       !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {6cd61e30-acd4-4082-aa90-294aa09b8389}, !- Handle
+  Surface 2,                              !- Name
+  Wall,                                   !- Surface Type
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  {1ae27b33-fa21-4b05-8624-d1fb221f079b}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -6.096, 0, 3.048,                       !- X,Y,Z Vertex 1 {m}
+  -6.096, 0, 0,                           !- X,Y,Z Vertex 2 {m}
+  0, 0, 0,                                !- X,Y,Z Vertex 3 {m}
+  0, 0, 3.048;                            !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {3ad2c37a-f1d9-4f40-9ca6-30b3db3ef16b}, !- Handle
+  Surface 3,                              !- Name
+  Wall,                                   !- Surface Type
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  {1ae27b33-fa21-4b05-8624-d1fb221f079b}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -6.096, 6.096, 3.048,                   !- X,Y,Z Vertex 1 {m}
+  -6.096, 6.096, 0,                       !- X,Y,Z Vertex 2 {m}
+  -6.096, 0, 0,                           !- X,Y,Z Vertex 3 {m}
+  -6.096, 0, 3.048;                       !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {89279628-effd-4b21-b801-e06e03ccdc0f}, !- Handle
+  Surface 4,                              !- Name
+  Wall,                                   !- Surface Type
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  {1ae27b33-fa21-4b05-8624-d1fb221f079b}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, 6.096, 3.048,                        !- X,Y,Z Vertex 1 {m}
+  0, 6.096, 0,                            !- X,Y,Z Vertex 2 {m}
+  -6.096, 6.096, 0,                       !- X,Y,Z Vertex 3 {m}
+  -6.096, 6.096, 3.048;                   !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {1ae23e11-0b79-4c2b-88af-b1f7fe0bcdd2}, !- Handle
+  Surface 5,                              !- Name
+  Wall,                                   !- Surface Type
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  {1ae27b33-fa21-4b05-8624-d1fb221f079b}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, 0, 3.048,                            !- X,Y,Z Vertex 1 {m}
+  0, 0, 0,                                !- X,Y,Z Vertex 2 {m}
+  0, 6.096, 0,                            !- X,Y,Z Vertex 3 {m}
+  0, 6.096, 3.048;                        !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {26c7e768-746a-405e-b356-b3b52f3454ff}, !- Handle
+  Surface 6,                              !- Name
+  RoofCeiling,                            !- Surface Type
+  {edd9ecd3-4290-4d56-b5a9-ef02bf102418}, !- Construction Name
+  {1ae27b33-fa21-4b05-8624-d1fb221f079b}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, 0, 3.048,                            !- X,Y,Z Vertex 1 {m}
+  0, 6.096, 3.048,                        !- X,Y,Z Vertex 2 {m}
+  -6.096, 6.096, 3.048,                   !- X,Y,Z Vertex 3 {m}
+  -6.096, 0, 3.048;                       !- X,Y,Z Vertex 4 {m}
+
+OS:Rendering:Color,
+  {3acdd20f-f203-4f10-9f56-0a59132da355}, !- Handle
+  Rendering Color 59,                     !- Name
+  147,                                    !- Rendering Red Value
+  112,                                    !- Rendering Green Value
+  219;                                    !- Rendering Blue Value
+
+OS:ThermalZone,
+  {5dbc5059-d10b-4cf6-9b02-ebfe4d1f5fb8}, !- Handle
+  zone heating,                           !- Name
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ,                                       !- Zone Outside Convection Algorithm
+  ,                                       !- Zone Conditioning Equipment List Name
+  {709c6035-2d1b-4690-9113-75b41d6e7adc}, !- Zone Air Inlet Port List
+  {2862b7b4-8145-4bd2-b550-260e9deef8f1}, !- Zone Air Exhaust Port List
+  {17c3c773-225c-4b32-80a3-e1befc51d5dc}, !- Zone Air Node Name
+  ,                                       !- Zone Return Air Node Name
+  ,                                       !- Primary Daylighting Control Name
+  ,                                       !- Fraction of Zone Controlled by Primary Daylighting Control
+  ,                                       !- Secondary Daylighting Control Name
+  ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
+  ,                                       !- Illuminance Map Name
+  {69c76cfc-207c-4bc4-b4e6-7296ff52a968}, !- Group Rendering Name
+  {a84840b8-3915-4e20-804c-15df06117c30}, !- Thermostat Name
+  Yes,                                    !- Use Ideal Air Loads
+  ;                                       !- Humidistat Name
+
+OS:Node,
+  {20765046-6d65-48ec-b9a9-7d6245e487c8}, !- Handle
+  Node 1,                                 !- Name
+  {17c3c773-225c-4b32-80a3-e1befc51d5dc}, !- Inlet Port
+  ;                                       !- Outlet Port
+
+OS:Connection,
+  {17c3c773-225c-4b32-80a3-e1befc51d5dc}, !- Handle
+  {4a94acf4-0d5c-411f-b760-1dd781c6ff07}, !- Name
+  {5dbc5059-d10b-4cf6-9b02-ebfe4d1f5fb8}, !- Source Object
+  11,                                     !- Outlet Port
+  {20765046-6d65-48ec-b9a9-7d6245e487c8}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:PortList,
+  {709c6035-2d1b-4690-9113-75b41d6e7adc}, !- Handle
+  Port List 1,                            !- Name
+  {5dbc5059-d10b-4cf6-9b02-ebfe4d1f5fb8}; !- HVAC Component
+
+OS:PortList,
+  {2862b7b4-8145-4bd2-b550-260e9deef8f1}, !- Handle
+  Port List 2,                            !- Name
+  {5dbc5059-d10b-4cf6-9b02-ebfe4d1f5fb8}; !- HVAC Component
+
+OS:Sizing:Zone,
+  {a312f070-1b07-4bcb-8c09-26331cacfd79}, !- Handle
+  {5dbc5059-d10b-4cf6-9b02-ebfe4d1f5fb8}, !- Zone or ZoneList Name
+  SupplyAirTemperature,                   !- Zone Cooling Design Supply Air Temperature Input Method
+  12.7777777777778,                       !- Zone Cooling Design Supply Air Temperature {C}
+  11.11,                                  !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+  SupplyAirTemperature,                   !- Zone Heating Design Supply Air Temperature Input Method
+  40,                                     !- Zone Heating Design Supply Air Temperature {C}
+  11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+  0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kg-H2O/kg-air}
+  0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kg-H2O/kg-air}
+  ,                                       !- Zone Heating Sizing Factor
+  ,                                       !- Zone Cooling Sizing Factor
+  DesignDay,                              !- Cooling Design Air Flow Method
+  ,                                       !- Cooling Design Air Flow Rate {m3/s}
+  ,                                       !- Cooling Minimum Air Flow per Zone Floor Area {m3/s-m2}
+  ,                                       !- Cooling Minimum Air Flow {m3/s}
+  ,                                       !- Cooling Minimum Air Flow Fraction
+  DesignDay,                              !- Heating Design Air Flow Method
+  ,                                       !- Heating Design Air Flow Rate {m3/s}
+  ,                                       !- Heating Maximum Air Flow per Zone Floor Area {m3/s-m2}
+  ,                                       !- Heating Maximum Air Flow {m3/s}
+  ,                                       !- Heating Maximum Air Flow Fraction
+  ,                                       !- Design Zone Air Distribution Effectiveness in Cooling Mode
+  ,                                       !- Design Zone Air Distribution Effectiveness in Heating Mode
+  No,                                     !- Account for Dedicated Outdoor Air System
+  NeutralSupplyAir,                       !- Dedicated Outdoor Air System Control Strategy
+  autosize,                               !- Dedicated Outdoor Air Low Setpoint Temperature for Design {C}
+  autosize;                               !- Dedicated Outdoor Air High Setpoint Temperature for Design {C}
+
+OS:ZoneHVAC:EquipmentList,
+  {8f1c8e71-6b7a-47ae-8125-1861801f0b8a}, !- Handle
+  Zone HVAC Equipment List 1,             !- Name
+  {5dbc5059-d10b-4cf6-9b02-ebfe4d1f5fb8}; !- Thermal Zone
+
+OS:Rendering:Color,
+  {69c76cfc-207c-4bc4-b4e6-7296ff52a968}, !- Handle
+  Rendering Color 60,                     !- Name
+  139,                                    !- Rendering Red Value
+  69,                                     !- Rendering Green Value
+  19;                                     !- Rendering Blue Value
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {a84840b8-3915-4e20-804c-15df06117c30}, !- Handle
+  Thermostat Setpoint Dual Setpoint 1,    !- Name
+  {49efed7d-2626-4e62-a446-e0db10034561}, !- Heating Setpoint Temperature Schedule Name
+  {85b2b92e-b40c-4e63-8f6e-5f713792e36f}; !- Cooling Setpoint Temperature Schedule Name
+
+OS:StandardsInformation:Material,
+  {7e1d6795-fedb-41e3-90ca-fed34600cae0}, !- Handle
+  {205d1797-4786-41aa-bb49-c62de03322d9}; !- Material Name
+
+OS:StandardsInformation:Material,
+  {100af3cf-587f-4ea6-80ac-229cdc8d1a3e}, !- Handle
+  {9732ca82-5b07-4b63-b379-a76d13f9d0d2}; !- Material Name
+
+OS:ScheduleTypeLimits,
+  {22d8a64d-daf2-4205-86ba-9a605c3c3e65}, !- Handle
+  Dimensionless,                          !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous;                             !- Numeric Type
+
+OS:ScheduleTypeLimits,
+  {7e934ea1-28b0-4f94-876e-2e8cb91ea839}, !- Handle
+  OnOff,                                  !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {7428c40a-326c-479e-b058-bfa46daea116}, !- Handle
+  Capacity,                               !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Capacity;                               !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {830804bf-3359-4820-8841-bbbf17b69ceb}, !- Handle
+  ClothingInsulation,                     !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  ClothingInsulation;                     !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {9e3a9036-515d-49b5-8de6-7f963075b3a9}, !- Handle
+  ControlMode,                            !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  ControlMode;                            !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {e0878d8e-a7e4-4d92-9cc1-dfbd11f47d6d}, !- Handle
+  DeltaTemperature,                       !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  DeltaTemperature;                       !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {b0b3cf21-4989-49c1-86a4-733b21a9b10e}, !- Handle
+  Dimensionless 1,                        !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Dimensionless;                          !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {34997fb5-afc5-479c-8248-d29ca8583b9b}, !- Handle
+  LinearPowerDensity,                     !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  LinearPowerDensity;                     !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {5e7c01ca-790b-4a1a-8899-102a7ff78500}, !- Handle
+  MassFlowRate,                           !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  MassFlowRate;                           !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {0ad36669-e179-4b69-8d58-f13c44e86947}, !- Handle
+  Percent,                                !- Name
+  0,                                      !- Lower Limit Value
+  100,                                    !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Percent;                                !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {cff7f3e7-d429-47ca-8d89-d38eaabfdc8b}, !- Handle
+  Pressure,                               !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Pressure;                               !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {fbf1f544-27d4-4061-b3dd-942adc30dad3}, !- Handle
+  RotationsPerMinute,                     !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  RotationsPerMinute;                     !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {d938e6c1-002a-47d1-befe-e1e4170d513f}, !- Handle
+  Velocity,                               !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Velocity;                               !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {fe3d55fc-2c35-4e0d-8cab-90b32e10e5cf}, !- Handle
+  VolumetricFlowRate,                     !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  VolumetricFlowRate;                     !- Unit Type
+
+OS:Schedule:Ruleset,
+  {85b2b92e-b40c-4e63-8f6e-5f713792e36f}, !- Handle
+  Cooling Schedule,                       !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  {cf9e02ed-884e-408f-aa62-c8ac5c0d1bd0}, !- Default Day Schedule Name
+  {ee663aaf-4a98-4171-abe8-4c98ab780a4f}; !- Summer Design Day Schedule Name
+
+OS:Schedule:Day,
+  {cf9e02ed-884e-408f-aa62-c8ac5c0d1bd0}, !- Handle
+  Schedule Day 1,                         !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  23.8888888888889;                       !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {49efed7d-2626-4e62-a446-e0db10034561}, !- Handle
+  Heating Schedule,                       !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  {c9d77e88-7346-40a0-a331-92a7b2cf60d7}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {c9d77e88-7346-40a0-a331-92a7b2cf60d7}, !- Handle
+  Schedule Day 2,                         !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  20.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Constant,
+  {8c36dc74-9682-416d-bd77-ba93b7e60d49}, !- Handle
+  Always On Discrete,                     !- Name
+  {c5062cb4-a496-4113-b29b-c5f3d1ac278c}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:ScheduleTypeLimits,
+  {c5062cb4-a496-4113-b29b-c5f3d1ac278c}, !- Handle
+  OnOff 1,                                !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+
+OS:Schedule:Ruleset,
+  {2d62aca9-c61f-464c-870b-ab9010efcdb1}, !- Handle
+  Deck_Temperature,                       !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  {4a5c1459-1336-48b5-83d5-b22f7c3abd97}, !- Default Day Schedule Name
+  {b6f524f1-83a2-40ae-8893-b0e36ffa88f1}, !- Summer Design Day Schedule Name
+  {a2989721-98e1-4aca-85fd-4c2bcaf8163c}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {4a5c1459-1336-48b5-83d5-b22f7c3abd97}, !- Handle
+  Deck_Temperature_Default,               !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  12.8;                                   !- Value Until Time 1
+
+OS:Schedule:Day,
+  {b6f524f1-83a2-40ae-8893-b0e36ffa88f1}, !- Handle
+  Deck_Temperature_Summer_Design_Day,     !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  12.8;                                   !- Value Until Time 1
+
+OS:Schedule:Day,
+  {a2989721-98e1-4aca-85fd-4c2bcaf8163c}, !- Handle
+  Deck_Temperature_Winter_Design_Day,     !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  12.8;                                   !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {5a7bc036-253a-4d39-8b64-1d8fb39aa5c2}, !- Handle
+  Hot_Water_Temperature,                  !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  {eb38c97d-40ad-4fe2-ab96-19dab4ebe21e}, !- Default Day Schedule Name
+  {f86fa56e-0516-4e7c-9532-7ffc43dbd4e4}, !- Summer Design Day Schedule Name
+  {20a51efa-bc44-460c-a5d1-2b8dc1f4f818}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {eb38c97d-40ad-4fe2-ab96-19dab4ebe21e}, !- Handle
+  Hot_Water_Temperature_Default,          !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  82.2222222222223;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {f86fa56e-0516-4e7c-9532-7ffc43dbd4e4}, !- Handle
+  Hot_Water_Temperature_Summer_Design_Day, !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  67;                                     !- Value Until Time 1
+
+OS:Schedule:Day,
+  {20a51efa-bc44-460c-a5d1-2b8dc1f4f818}, !- Handle
+  Hot_Water_Temperature_Winter_Design_Day, !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  67;                                     !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {c89fd9bc-ac4c-4b7f-bf6e-e1e56f478262}, !- Handle
+  Condenser Temperature,                  !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  {017bde18-ba3f-4a33-b346-dd1253020a15}, !- Default Day Schedule Name
+  {b00e0f16-5eb7-42bb-a94f-7d79d80d1531}, !- Summer Design Day Schedule Name
+  {cda406c3-bd44-4d05-88c2-9d8ed1fe2770}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {017bde18-ba3f-4a33-b346-dd1253020a15}, !- Handle
+  Chilled_Water_Temperature_Default,      !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  26.6666666666667;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {b00e0f16-5eb7-42bb-a94f-7d79d80d1531}, !- Handle
+  Chilled_Water_Temperature_Summer_Design_Day, !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  23.8888888888889;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {cda406c3-bd44-4d05-88c2-9d8ed1fe2770}, !- Handle
+  Chilled_Water_Temperature_Winter_Design_Day, !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  23.8888888888889;                       !- Value Until Time 1
+
+OS:Curve:Biquadratic,
+  {b41b609e-dfd6-4a27-b280-509ec98097d4}, !- Handle
+  Boiler Efficiency,                      !- Name
+  1,                                      !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {0cdc23bc-963a-40b6-8fa3-50d01783deda}, !- Handle
+  Curve Biquadratic 1,                    !- Name
+  0.258,                                  !- Coefficient1 Constant
+  0.0389,                                 !- Coefficient2 x
+  -0.000217,                              !- Coefficient3 x**2
+  0.0469,                                 !- Coefficient4 y
+  -0.000943,                              !- Coefficient5 y**2
+  -0.000343,                              !- Coefficient6 x*y
+  5,                                      !- Minimum Value of x
+  10,                                     !- Maximum Value of x
+  24,                                     !- Minimum Value of y
+  35;                                     !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {be104bcd-4baa-4d91-8597-6a92ff08c7b3}, !- Handle
+  Curve Biquadratic 2,                    !- Name
+  0.934,                                  !- Coefficient1 Constant
+  -0.0582,                                !- Coefficient2 x
+  0.0045,                                 !- Coefficient3 x**2
+  0.00243,                                !- Coefficient4 y
+  0.000486,                               !- Coefficient5 y**2
+  -0.00122,                               !- Coefficient6 x*y
+  5,                                      !- Minimum Value of x
+  10,                                     !- Maximum Value of x
+  24,                                     !- Minimum Value of y
+  35;                                     !- Maximum Value of y
+
+OS:Curve:Quadratic,
+  {482a3f1d-161f-4946-82f1-371da2a5f245}, !- Handle
+  Curve Quadratic 1,                      !- Name
+  0.222903,                               !- Coefficient1 Constant
+  0.313387,                               !- Coefficient2 x
+  0.46371,                                !- Coefficient3 x**2
+  0,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:Schedule:Constant,
+  {63f80618-6e73-4a24-b099-7eb639fcb5c2}, !- Handle
+  Always On Discrete 1,                   !- Name
+  {6082df1d-ca84-476a-ac19-02b7980f98f0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:ScheduleTypeLimits,
+  {6082df1d-ca84-476a-ac19-02b7980f98f0}, !- Handle
+  Schedule Type Limits 1,                 !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+
+OS:Schedule:Ruleset,
+  {09b6694a-947a-4e02-932f-1f5ed006cef1}, !- Handle
+  Min OSA Schedule Baseline,              !- Name
+  {55c44e2f-3c81-40b0-84f7-9b6efa1c1036}, !- Schedule Type Limits Name
+  {ddbd352e-3ca4-4c81-b664-8dab9828073c}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {ddbd352e-3ca4-4c81-b664-8dab9828073c}, !- Handle
+  Schedule Day 3,                         !- Name
+  {55c44e2f-3c81-40b0-84f7-9b6efa1c1036}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:RunPeriod,
+  {e07b202c-70ec-409e-b2c8-f3d57a51d49b}, !- Handle
+  Run Period 1,                           !- Name
+  1,                                      !- Begin Month
+  1,                                      !- Begin Day of Month
+  12,                                     !- End Month
+  31,                                     !- End Day of Month
+  ,                                       !- Use Weather File Holidays and Special Days
+  ,                                       !- Use Weather File Daylight Saving Period
+  ,                                       !- Apply Weekend Holiday Rule
+  ,                                       !- Use Weather File Rain Indicators
+  ,                                       !- Use Weather File Snow Indicators
+  ;                                       !- Number of Times Runperiod to be Repeated
+
+OS:Schedule:Ruleset,
+  {aad28d5b-d95f-4502-8351-f8f5bb3ce802}, ! Handle
+  Chilled Water Temperature,              ! Name
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, ! Schedule Type Limits Name
+  {55bc60b1-128c-4882-a8f0-1435b3b09edd}, ! Default Day Schedule Name
+  {144e4122-35ff-48f3-9fc2-4cd082f7d4a4}, ! Summer Design Day Schedule Name
+  {0461b02a-057d-4c32-b5d8-621d4dd47f4d}; ! Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {55bc60b1-128c-4882-a8f0-1435b3b09edd}, ! Handle
+  Chilled Water Temperature Default,      ! Name
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, ! Schedule Type Limits Name
+  ,                                       ! Interpolate to Timestep
+  24,                                     ! Hour 1
+  0,                                      ! Minute 1
+  6.7;                                    ! Value Until Time 1
+
+OS:Schedule:Day,
+  {144e4122-35ff-48f3-9fc2-4cd082f7d4a4}, ! Handle
+  Chilled Water Temperature Summer Design Day, ! Name
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, ! Schedule Type Limits Name
+  ,                                       ! Interpolate to Timestep
+  24,                                     ! Hour 1
+  0,                                      ! Minute 1
+  6.7;                                    ! Value Until Time 1
+
+OS:Schedule:Day,
+  {0461b02a-057d-4c32-b5d8-621d4dd47f4d}, ! Handle
+  Chilled Water Temperature Winter Design Day, ! Name
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, ! Schedule Type Limits Name
+  ,                                       ! Interpolate to Timestep
+  24,                                     ! Hour 1
+  0,                                      ! Minute 1
+  6.7;                                    ! Value Until Time 1
+
+OS:ScheduleTypeLimits,
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, !- Handle
+  Temperature,                            !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Schedule:Ruleset,
+  {8dba96e0-3718-4132-910b-76b0df8d87b6}, ! Handle
+  Evap SP Sched,                          ! Name
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, ! Schedule Type Limits Name
+  {a81c0972-1ed3-4d8b-bb40-0374f224fd59}, ! Default Day Schedule Name
+  {4aafa99f-504e-490d-ab53-48144e5c04cd}, ! Summer Design Day Schedule Name
+  {17b46984-8f46-434c-b1e8-43483908aaf3}; ! Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {a81c0972-1ed3-4d8b-bb40-0374f224fd59}, ! Handle
+  Chilled Water Temperature Default 1,    ! Name
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, ! Schedule Type Limits Name
+  ,                                       ! Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  12.7777777777778;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {4aafa99f-504e-490d-ab53-48144e5c04cd}, ! Handle
+  Chilled Water Temperature Summer Design Day 1, ! Name
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, ! Schedule Type Limits Name
+  ,                                       ! Interpolate to Timestep
+  24,                                     ! Hour 1
+  0,                                      ! Minute 1
+  6.7;                                    ! Value Until Time 1
+
+OS:Schedule:Day,
+  {17b46984-8f46-434c-b1e8-43483908aaf3}, ! Handle
+  Chilled Water Temperature Winter Design Day 1, ! Name
+  {4f1fd82c-d4c2-436b-b4f4-85edf85d8deb}, ! Schedule Type Limits Name
+  ,                                       ! Interpolate to Timestep
+  24,                                     ! Hour 1
+  0,                                      ! Minute 1
+  6.7;                                    ! Value Until Time 1
+
+OS:Curve:Cubic,
+  {38e7109b-61e3-4ab0-aac1-a8303d842878}, !- Handle
+  Var Spd Cooling Tower 1 Fan Power Ratio Curve, !- Name
+  -0.0093,                                !- Coefficient1 Constant
+  0.0512,                                 !- Coefficient2 x
+  -0.0838,                                !- Coefficient3 x**2
+  1.0419,                                 !- Coefficient4 x**3
+  0.15,                                   !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:OtherEquipment:Definition,
+  {266884f7-0836-4281-b340-3d6d1545b99f}, !- Handle
+  Cooling Load,                           !- Name
+  EquipmentLevel,                         !- Design Level Calculation Method
+  1,                                      !- Design Level {W}
+  ,                                       !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/Person}
+  ,                                       !- Fraction Latent
+  0;                                      !- Fraction Radiant
+
+OS:Schedule:Ruleset,
+  {c29b0153-3a18-4a00-bc53-0689c1c2872c}, !- Handle
+  Always On Sched,                        !- Name
+  {55c44e2f-3c81-40b0-84f7-9b6efa1c1036}, !- Schedule Type Limits Name
+  {9acaed9b-5ac2-403e-89cf-001a658cc4df}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {9acaed9b-5ac2-403e-89cf-001a658cc4df}, !- Handle
+  Schedule Day 4,                         !- Name
+  {55c44e2f-3c81-40b0-84f7-9b6efa1c1036}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:RadianceParameters,
+  {c0f3cf26-ff1e-419c-a9a8-ef368814c554}, !- Handle
+  1,                                      !- Accumulated Rays per Record
+  0,                                      !- Direct Threshold
+  1,                                      !- Direct Certainty
+  1,                                      !- Direct Jitter
+  1,                                      !- Direct Pretest
+  6,                                      !- Ambient Bounces VMX
+  2,                                      !- Ambient Bounces DMX
+  4050,                                   !- Ambient Divisions VMX
+  512,                                    !- Ambient Divisions DMX
+  256,                                    !- Ambient Supersamples
+  0.001,                                  !- Limit Weight VMX
+  0.001,                                  !- Limit Weight DMX
+  500,                                    !- Klems Sampling Density
+  146;                                    !- Sky Discretization Resolution
+
+OS:SimulationControl,
+  {1f3276f9-e0e2-4d29-9848-d20777b486dd}, !- Handle
+  ,                                       !- Do Zone Sizing Calculation
+  ,                                       !- Do System Sizing Calculation
+  ,                                       !- Do Plant Sizing Calculation
+  ,                                       !- Run Simulation for Sizing Periods
+  ,                                       !- Run Simulation for Weather File Run Periods
+  ,                                       !- Loads Convergence Tolerance Value
+  ,                                       !- Temperature Convergence Tolerance Value {deltaC}
+  ,                                       !- Solar Distribution
+  50;                                     !- Maximum Number of Warmup Days
+
+OS:Sizing:Parameters,
+  {308fa07c-6379-45f0-ab81-609270eae311}, !- Handle
+  1,                                      !- Heating Sizing Factor
+  1;                                      !- Cooling Sizing Factor
+
+OS:ProgramControl,
+  {e34cc5ed-b328-4300-a853-562aa2a98e91}; !- Handle
+
+OS:Timestep,
+  {7dfa5ff3-f3b9-4332-ae71-4b4903d043ab}, !- Handle
+  4;                                      !- Number of Timesteps per Hour
+
+OS:OutputControl:ReportingTolerances,
+  {0eb18d7c-aecc-45a1-9486-07076b3c8c4b}; !- Handle
+
+OS:ConvergenceLimits,
+  {e635ae53-af83-437a-8b81-c9f06b4bd63c}, !- Handle
+  1,                                      !- Minimum System Timestep {minutes}
+  40;                                     !- Maximum HVAC Iterations
+
+OS:ShadowCalculation,
+  {10bea3c3-f966-4a20-8373-730516091024}, !- Handle
+  20,                                     !- Calculation Frequency
+  15000;                                  !- Maximum Figures in Shadow Overlap Calculations
+
+OS:SurfaceConvectionAlgorithm:Inside,
+  {93f622d9-c8aa-49c8-849a-1e10ceaf8fb8}, !- Handle
+  Simple;                                 !- Algorithm
+
+OS:SurfaceConvectionAlgorithm:Outside,
+  {75367e8c-171b-48d4-80d1-0c11e16e828c}, !- Handle
+  SimpleCombined;                         !- Algorithm
+
+OS:HeatBalanceAlgorithm,
+  {ab642f17-39ba-4ffd-837d-9d682c074d74}, !- Handle
+  ConductionTransferFunction,             !- Algorithm
+  200;                                    !- Surface Temperature Upper Limit {C}
+
+OS:ZoneAirHeatBalanceAlgorithm,
+  {dfb20dca-e944-487e-835c-9f021b572f6a}, !- Handle
+  ThirdOrderBackwardDifference;           !- Algorithm
+
+OS:ZoneAirContaminantBalance,
+  {480807e3-3f83-4202-b8d6-a6052580dd9e}; !- Handle
+
+OS:ZoneCapacitanceMultiplier:ResearchSpecial,
+  {0fc5c161-2803-41fc-ac13-239519fce05f}, !- Handle
+  ,                                       !- Temperature Capacity Multiplier
+  ,                                       !- Humidity Capacity Multiplier
+  ;                                       !- Carbon Dioxide Capacity Multiplier
+
+OS:BuildingStory,
+  {2d3e9fb7-a1a4-4a0f-a8bd-464725b78aa7}, !- Handle
+  Building Story 2,                       !- Name
+  0,                                      !- Nominal Z Coordinate {m}
+  3.048,                                  !- Nominal Floor to Floor Height {m}
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  {c7290de8-a810-4b32-872d-2caa575915c7}; !- Group Rendering Name
+
+OS:Space,
+  {88e0cee5-e0aa-4db9-ae30-dfb1ca231a94}, !- Handle
+  cool zone,                              !- Name
+  {991220ed-7722-4f82-9bed-a76fe98563c3}, !- Space Type Name
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  ,                                       !- Direction of Relative North {deg}
+  17.1575514837897,                       !- X Origin {m}
+  0.167124358577388,                      !- Y Origin {m}
+  2.88764567812905e-015,                  !- Z Origin {m}
+  {8541a0eb-1653-434c-a3b9-c655bfa1652d}, !- Building Story Name
+  {362a6162-7bfa-436f-8d7b-513d7eb241aa}, !- Thermal Zone Name
+  ,                                       !- Part of Total Floor Area
+  ;                                       !- Design Specification Outdoor Air Object Name
+
+OS:Surface,
+  {3432a133-8e15-4c06-a228-717dfa99420a}, !- Handle
+  Surface 7,                              !- Name
+  Floor,                                  !- Surface Type
+  {4ee71df9-85c1-4a24-9be8-bee433f9e015}, !- Construction Name
+  {88e0cee5-e0aa-4db9-ae30-dfb1ca231a94}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  27.432, 39.1363199999999, 0,            !- X,Y,Z Vertex 1 {m}
+  27.432, -3.15836246045365e-016, 0,      !- X,Y,Z Vertex 2 {m}
+  -6.09600000000002, -3.15836246045365e-016, 0, !- X,Y,Z Vertex 3 {m}
+  -6.09600000000002, 39.1363199999999, 0; !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {eae51995-4aac-4977-90de-a84a98031c12}, !- Handle
+  Surface 8,                              !- Name
+  Wall,                                   !- Surface Type
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  {88e0cee5-e0aa-4db9-ae30-dfb1ca231a94}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -6.09600000000002, -3.15836246045365e-016, 3.048, !- X,Y,Z Vertex 1 {m}
+  -6.09600000000002, -3.15836246045365e-016, 0, !- X,Y,Z Vertex 2 {m}
+  27.432, -3.15836246045365e-016, 0,      !- X,Y,Z Vertex 3 {m}
+  27.432, -3.15836246045365e-016, 3.048;  !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {868d3061-930d-4aab-b902-e043ba7fda75}, !- Handle
+  Surface 9,                              !- Name
+  Wall,                                   !- Surface Type
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  {88e0cee5-e0aa-4db9-ae30-dfb1ca231a94}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -6.09600000000002, 39.1363199999999, 3.048, !- X,Y,Z Vertex 1 {m}
+  -6.09600000000002, 39.1363199999999, 0, !- X,Y,Z Vertex 2 {m}
+  -6.09600000000002, -3.15836246045365e-016, 0, !- X,Y,Z Vertex 3 {m}
+  -6.09600000000002, -3.15836246045365e-016, 3.048; !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {99e9e33c-0c54-491b-b002-39ecade4b6cf}, !- Handle
+  Surface 10,                             !- Name
+  Wall,                                   !- Surface Type
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  {88e0cee5-e0aa-4db9-ae30-dfb1ca231a94}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  27.432, 39.1363199999999, 3.048,        !- X,Y,Z Vertex 1 {m}
+  27.432, 39.1363199999999, 0,            !- X,Y,Z Vertex 2 {m}
+  -6.09600000000002, 39.1363199999999, 0, !- X,Y,Z Vertex 3 {m}
+  -6.09600000000002, 39.1363199999999, 3.048; !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {470e400f-61d6-4ad5-be89-bcb611a7a025}, !- Handle
+  Surface 11,                             !- Name
+  Wall,                                   !- Surface Type
+  {7ea68359-ad75-4d6c-8862-e2965b9ee3ab}, !- Construction Name
+  {88e0cee5-e0aa-4db9-ae30-dfb1ca231a94}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  27.432, -3.15836246045365e-016, 3.048,  !- X,Y,Z Vertex 1 {m}
+  27.432, -3.15836246045365e-016, 0,      !- X,Y,Z Vertex 2 {m}
+  27.432, 39.1363199999999, 0,            !- X,Y,Z Vertex 3 {m}
+  27.432, 39.1363199999999, 3.048;        !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {64ea3528-06a7-4812-8b5e-52a20a778ea4}, !- Handle
+  Surface 12,                             !- Name
+  RoofCeiling,                            !- Surface Type
+  {edd9ecd3-4290-4d56-b5a9-ef02bf102418}, !- Construction Name
+  {88e0cee5-e0aa-4db9-ae30-dfb1ca231a94}, !- Space Name
+  Adiabatic,                              !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  27.432, -3.15836246045365e-016, 3.048,  !- X,Y,Z Vertex 1 {m}
+  27.432, 39.1363199999999, 3.048,        !- X,Y,Z Vertex 2 {m}
+  -6.09600000000002, 39.1363199999999, 3.048, !- X,Y,Z Vertex 3 {m}
+  -6.09600000000002, -3.15836246045365e-016, 3.048; !- X,Y,Z Vertex 4 {m}
+
+OS:Rendering:Color,
+  {c7290de8-a810-4b32-872d-2caa575915c7}, !- Handle
+  Rendering Color 61,                     !- Name
+  255,                                    !- Rendering Red Value
+  250,                                    !- Rendering Green Value
+  250;                                    !- Rendering Blue Value
+
+OS:ThermalZone,
+  {362a6162-7bfa-436f-8d7b-513d7eb241aa}, !- Handle
+  zone cooling,                           !- Name
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ,                                       !- Zone Outside Convection Algorithm
+  ,                                       !- Zone Conditioning Equipment List Name
+  {11cb3ef7-6454-4803-bd51-229ed0bead2e}, !- Zone Air Inlet Port List
+  {5226b79a-2386-4180-8ec0-c4bd47a17b55}, !- Zone Air Exhaust Port List
+  {dd282d21-7e2b-4621-a814-e12db95a89a4}, !- Zone Air Node Name
+  ,                                       !- Zone Return Air Node Name
+  ,                                       !- Primary Daylighting Control Name
+  ,                                       !- Fraction of Zone Controlled by Primary Daylighting Control
+  ,                                       !- Secondary Daylighting Control Name
+  ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
+  ,                                       !- Illuminance Map Name
+  {67cf7d1c-83d5-4289-b738-f37ef171b096}, !- Group Rendering Name
+  {282676d0-dd5e-4c91-aa19-c4917118643e}, !- Thermostat Name
+  Yes,                                    !- Use Ideal Air Loads
+  ;                                       !- Humidistat Name
+
+OS:Node,
+  {8bee1dbd-126c-474c-8ff0-a6d788f1b59b}, !- Handle
+  Node 65,                                !- Name
+  {dd282d21-7e2b-4621-a814-e12db95a89a4}, !- Inlet Port
+  ;                                       !- Outlet Port
+
+OS:Connection,
+  {dd282d21-7e2b-4621-a814-e12db95a89a4}, !- Handle
+  {c94011eb-a02e-4874-8851-6003d18ee593}, !- Name
+  {362a6162-7bfa-436f-8d7b-513d7eb241aa}, !- Source Object
+  11,                                     !- Outlet Port
+  {8bee1dbd-126c-474c-8ff0-a6d788f1b59b}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:PortList,
+  {11cb3ef7-6454-4803-bd51-229ed0bead2e}, !- Handle
+  Port List 3,                            !- Name
+  {362a6162-7bfa-436f-8d7b-513d7eb241aa}; !- HVAC Component
+
+OS:PortList,
+  {5226b79a-2386-4180-8ec0-c4bd47a17b55}, !- Handle
+  Port List 4,                            !- Name
+  {362a6162-7bfa-436f-8d7b-513d7eb241aa}; !- HVAC Component
+
+OS:Sizing:Zone,
+  {4c6f9374-727e-4658-bd6a-1d62213d4763}, !- Handle
+  {362a6162-7bfa-436f-8d7b-513d7eb241aa}, !- Zone or ZoneList Name
+  SupplyAirTemperature,                   !- Zone Cooling Design Supply Air Temperature Input Method
+  14,                                     !- Zone Cooling Design Supply Air Temperature {C}
+  11.11,                                  !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+  SupplyAirTemperature,                   !- Zone Heating Design Supply Air Temperature Input Method
+  40,                                     !- Zone Heating Design Supply Air Temperature {C}
+  11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+  0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kg-H2O/kg-air}
+  0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kg-H2O/kg-air}
+  ,                                       !- Zone Heating Sizing Factor
+  ,                                       !- Zone Cooling Sizing Factor
+  DesignDay,                              !- Cooling Design Air Flow Method
+  ,                                       !- Cooling Design Air Flow Rate {m3/s}
+  ,                                       !- Cooling Minimum Air Flow per Zone Floor Area {m3/s-m2}
+  ,                                       !- Cooling Minimum Air Flow {m3/s}
+  ,                                       !- Cooling Minimum Air Flow Fraction
+  DesignDay,                              !- Heating Design Air Flow Method
+  ,                                       !- Heating Design Air Flow Rate {m3/s}
+  ,                                       !- Heating Maximum Air Flow per Zone Floor Area {m3/s-m2}
+  ,                                       !- Heating Maximum Air Flow {m3/s}
+  ,                                       !- Heating Maximum Air Flow Fraction
+  ,                                       !- Design Zone Air Distribution Effectiveness in Cooling Mode
+  ,                                       !- Design Zone Air Distribution Effectiveness in Heating Mode
+  No,                                     !- Account for Dedicated Outdoor Air System
+  NeutralSupplyAir,                       !- Dedicated Outdoor Air System Control Strategy
+  autosize,                               !- Dedicated Outdoor Air Low Setpoint Temperature for Design {C}
+  autosize;                               !- Dedicated Outdoor Air High Setpoint Temperature for Design {C}
+
+OS:ZoneHVAC:EquipmentList,
+  {ed725a69-b53c-4cab-a2b5-e142d883b099}, !- Handle
+  Zone HVAC Equipment List 2,             !- Name
+  {362a6162-7bfa-436f-8d7b-513d7eb241aa}; !- Thermal Zone
+
+OS:Rendering:Color,
+  {67cf7d1c-83d5-4289-b738-f37ef171b096}, !- Handle
+  Rendering Color 62,                     !- Name
+  138,                                    !- Rendering Red Value
+  43,                                     !- Rendering Green Value
+  226;                                    !- Rendering Blue Value
+
+OS:Schedule:Constant,
+  {a99843cc-4b51-48a9-9c70-cbbb77521596}, !- Handle
+  Always On Discrete 2,                   !- Name
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:ScheduleTypeLimits,
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Handle
+  Schedule Type Limits 2,                 !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+
+OS:Schedule:Constant,
+  {588e124d-082f-4ce8-a2db-427b3d712f12}, !- Handle
+  Always On Discrete 3,                   !- Name
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:Curve:Exponent,
+  {ddbee5bf-e65c-49bf-85f1-757a9858fca6}, !- Handle
+  Fan On Off Power Curve 12,              !- Name
+  1,                                      !- Coefficient1 Constant
+  0,                                      !- Coefficient2 Constant
+  0,                                      !- Coefficient3 Constant
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  ,                                       !- Input Unit Type for X
+  ;                                       !- Output Unit Type
+
+OS:Curve:Cubic,
+  {0ce9a20a-e7bb-459e-8f5b-5bc6a59e6519}, !- Handle
+  Fan On Off Efficiency Curve 12,         !- Name
+  1,                                      !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  0,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:Schedule:Constant,
+  {6153252f-9d52-4a53-a1bc-ae5a7075407b}, !- Handle
+  Always On Discrete 4,                   !- Name
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:Schedule:Constant,
+  {214d4bab-27e7-4047-b715-36722e1d3ca0}, !- Handle
+  Always On Discrete 5,                   !- Name
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:ThermostatSetpoint:DualSetpoint,
+  {282676d0-dd5e-4c91-aa19-c4917118643e}, !- Handle
+  Thermostat Setpoint Dual Setpoint 2,    !- Name
+  {49efed7d-2626-4e62-a446-e0db10034561}, !- Heating Setpoint Temperature Schedule Name
+  {85b2b92e-b40c-4e63-8f6e-5f713792e36f}; !- Cooling Setpoint Temperature Schedule Name
+
+OS:SpaceType,
+  {991220ed-7722-4f82-9bed-a76fe98563c3}, !- Handle
+  zone cool,                              !- Name
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  {ede0a72d-692f-411e-898f-ccb1f783c262}, !- Group Rendering Name
+  {47cb7b1c-2bb6-4e5a-8000-1dc2db75d20f}, !- Design Specification Outdoor Air Object Name
+  Office,                                 !- Standards Building Type
+  OpenOffice;                             !- Standards Space Type
+
+OS:OtherEquipment,
+  {dc5e7654-3df6-4da3-8d29-b17f34929cfd}, !- Handle
+  Cooling Load,                           !- Name
+  {266884f7-0836-4281-b340-3d6d1545b99f}, !- Other Equipment Definition Name
+  {991220ed-7722-4f82-9bed-a76fe98563c3}, !- Space or SpaceType Name
+  {c29b0153-3a18-4a00-bc53-0689c1c2872c}; !- Schedule Name
+
+OS:Schedule:Day,
+  {ee663aaf-4a98-4171-abe8-4c98ab780a4f}, !- Handle
+  Schedule Day 6,                         !- Name
+  {088565a9-dd39-48f6-99d3-bfe5073149c2}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  21.1111111111111;                       !- Value Until Time 1
+
+OS:Schedule:Constant,
+  {748b0e13-658a-443e-b347-c46139e7b7cb}, !- Handle
+  Always On Discrete 6,                   !- Name
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:Schedule:Constant,
+  {dd197189-c68d-4c09-b661-15efb40459e7}, !- Handle
+  Always On Discrete 7,                   !- Name
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:Schedule:Constant,
+  {f5d729d1-9929-4579-81ac-0a56de514ac2}, !- Handle
+  Always On Discrete 8,                   !- Name
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:Schedule:Constant,
+  {468145ff-9a26-4636-9c88-b3937ebb2aa9}, !- Handle
+  Always On Discrete 9,                   !- Name
+  {49fdd202-dd1f-4200-a56b-5d87160c0ba0}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:Curve:Biquadratic,
+  {231c6ecf-8f81-464e-8abe-f91a61c2d958}, !- Handle
+  Water Cooled Chiller CCFofT,            !- Name
+  0.258,                                  !- Coefficient1 Constant
+  0.0389,                                 !- Coefficient2 x
+  -0.000217,                              !- Coefficient3 x**2
+  0.0469,                                 !- Coefficient4 y
+  -0.000943,                              !- Coefficient5 y**2
+  -0.000343,                              !- Coefficient6 x*y
+  5,                                      !- Minimum Value of x
+  10,                                     !- Maximum Value of x
+  24,                                     !- Minimum Value of y
+  35;                                     !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {aef4b4a3-08df-46b7-86f9-0daf6f76d9c5}, !- Handle
+  Water Cooled Chiller EItoCoolingOutputRatioFofT, !- Name
+  0.934,                                  !- Coefficient1 Constant
+  -0.0582,                                !- Coefficient2 x
+  0.0045,                                 !- Coefficient3 x**2
+  0.00243,                                !- Coefficient4 y
+  0.000486,                               !- Coefficient5 y**2
+  -0.00122,                               !- Coefficient6 x*y
+  5,                                      !- Minimum Value of x
+  10,                                     !- Maximum Value of x
+  24,                                     !- Minimum Value of y
+  35;                                     !- Maximum Value of y
+
+OS:Curve:Quadratic,
+  {8f28c8ec-b6a7-4773-8a25-68b769e1ec10}, !- Handle
+  Water Cooled Chiller EItoCoolingOutputRatioFofPLR, !- Name
+  0.222903,                               !- Coefficient1 Constant
+  0.313387,                               !- Coefficient2 x
+  0.46371,                                !- Coefficient3 x**2
+  0,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:Schedule:Ruleset,
+  {dfdb22ec-c72b-4c92-a631-7d4c8f983914}, !- Handle
+  Min OSA Schedule Proposed,              !- Name
+  {55c44e2f-3c81-40b0-84f7-9b6efa1c1036}, !- Schedule Type Limits Name
+  {881c8ff7-b315-4740-8656-c235c255435a}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {881c8ff7-b315-4740-8656-c235c255435a}, !- Handle
+  Schedule Day 7,                         !- Name
+  {55c44e2f-3c81-40b0-84f7-9b6efa1c1036}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  7,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.5,                                    !- Value Until Time 1
+  17,                                     !- Hour 2
+  0,                                      !- Minute 2
+  1,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  0.5;                                    !- Value Until Time 3
+
+OS:OtherEquipment:Definition,
+  {57ee2a5d-33e8-43c2-bcc5-bb4fa6421192}, !- Handle
+  Heating Load,                           !- Name
+  EquipmentLevel,                         !- Design Level Calculation Method
+  -1,                                     !- Design Level {W}
+  ,                                       !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/Person}
+  0,                                      !- Fraction Latent
+  0;                                      !- Fraction Radiant
+
+OS:DesignSpecification:OutdoorAir,
+  {47cb7b1c-2bb6-4e5a-8000-1dc2db75d20f}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Md Office - CZ1-3 Ventilation 1, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {199de3a4-3b65-4c41-9bf4-a377f1c809bf}, !- Handle
+  189.1-2009 - Office - WholeBuilding - Lg Office - CZ4-8 Ventilation 1, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:OtherEquipment,
+  {d18c1ec2-3b30-42ee-82f8-7fd25cfcd731}, !- Handle
+  Heating Load,                           !- Name
+  {57ee2a5d-33e8-43c2-bcc5-bb4fa6421192}, !- Other Equipment Definition Name
+  {ad9972e4-489e-404e-841e-c9bbd72d0111}, !- Space or SpaceType Name
+  {c29b0153-3a18-4a00-bc53-0689c1c2872c}; !- Schedule Name
+
+OS:StandardsInformation:Material,
+  {0df69889-9b41-4e92-8cca-866be466a9aa}, !- Handle
+  {c7326da9-9b42-4f08-b9c2-710e29f1df68}; !- Material Name
+
+OS:StandardsInformation:Material,
+  {6410763b-113b-4d85-9ab9-930dc6b6c96c}, !- Handle
+  {5b28cd98-6ada-46e3-ab5c-8ce18c82e2e4}; !- Material Name
+
+OS:StandardsInformation:Material,
+  {ec7d1f7c-c6ca-4b2a-a975-74f79e18cd81}, !- Handle
+  {2dde63ec-8c12-47e9-a694-a5c55907b2a7}; !- Material Name
+
+OS:WeatherFile,
+  {f3299342-445d-470a-bbc6-660ae3e4a3c7}, !- Handle
+  Salt Lake City IntL Arpt  Isis,         !- City
+  UT,                                     !- State Province Region
+  USA,                                    !- Country
+  TMY3,                                   !- Data Source
+  725720,                                 !- WMO Number
+  40.77,                                  !- Latitude {deg}
+  -111.97,                                !- Longitude {deg}
+  -7,                                     !- Time Zone {hr}
+  1288,                                   !- Elevation {m}
+  file:USA_UT_Salt.Lake.City.Intl.AP.725720_TMY3.epw, !- Url
+  BAB7A05C;                               !- Checksum
+
+OS:SizingPeriod:DesignDay,
+  {5bc1fcbd-d4fa-4604-88e7-aeb934ac9168}, !- Handle
+  Salt Lake City IntL Arpt  Isi Ann Htg 99.6% Condns DB, !- Name
+  -12.6,                                  !- Maximum Dry-Bulb Temperature {C}
+  0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
+  -12.6,                                  !- Humidity Indicating Conditions at Maximum Dry-Bulb
+  86779,                                  !- Barometric Pressure {Pa}
+  2.8,                                    !- Wind Speed {m/s}
+  150,                                    !- Wind Direction {deg}
+  0,                                      !- Sky Clearness
+  0,                                      !- Rain Indicator
+  0,                                      !- Snow Indicator
+  21,                                     !- Day of Month
+  1,                                      !- Month
+  WinterDesignDay,                        !- Day Type
+  0,                                      !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Indicating Type
+  ,                                       !- Humidity Indicating Day Schedule Name
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Schedule Name
+  ASHRAEClearSky;                         !- Solar Model Indicator
+
+OS:SizingPeriod:DesignDay,
+  {2a97c82a-2b12-47b6-b832-427ad08b6374}, !- Handle
+  Salt Lake City IntL Arpt  Isi Ann Hum_n 99.6% Condns DP=>MCDB, !- Name
+  -10.7,                                  !- Maximum Dry-Bulb Temperature {C}
+  0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
+  -16.5,                                  !- Humidity Indicating Conditions at Maximum Dry-Bulb
+  86779,                                  !- Barometric Pressure {Pa}
+  2.8,                                    !- Wind Speed {m/s}
+  150,                                    !- Wind Direction {deg}
+  0,                                      !- Sky Clearness
+  0,                                      !- Rain Indicator
+  0,                                      !- Snow Indicator
+  21,                                     !- Day of Month
+  1,                                      !- Month
+  WinterDesignDay,                        !- Day Type
+  0,                                      !- Daylight Saving Time Indicator
+  Dewpoint,                               !- Humidity Indicating Type
+  ,                                       !- Humidity Indicating Day Schedule Name
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Schedule Name
+  ASHRAEClearSky;                         !- Solar Model Indicator
+
+OS:SizingPeriod:DesignDay,
+  {d9014769-02cb-42bb-8ede-a4d684d3c753}, !- Handle
+  Salt Lake City IntL Arpt  Isi Ann Htg Wind 99.6% Condns WS=>MCDB, !- Name
+  7,                                      !- Maximum Dry-Bulb Temperature {C}
+  0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
+  7,                                      !- Humidity Indicating Conditions at Maximum Dry-Bulb
+  86779,                                  !- Barometric Pressure {Pa}
+  12.6,                                   !- Wind Speed {m/s}
+  150,                                    !- Wind Direction {deg}
+  0,                                      !- Sky Clearness
+  0,                                      !- Rain Indicator
+  0,                                      !- Snow Indicator
+  21,                                     !- Day of Month
+  1,                                      !- Month
+  WinterDesignDay,                        !- Day Type
+  0,                                      !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Indicating Type
+  ,                                       !- Humidity Indicating Day Schedule Name
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Schedule Name
+  ASHRAEClearSky;                         !- Solar Model Indicator
+
+OS:SizingPeriod:DesignDay,
+  {50a38d0f-d0ab-4c6c-86af-e0e1d9e46d85}, !- Handle
+  Salt Lake City IntL Arpt  Isi Ann Clg .4% Condns DB=>MWB, !- Name
+  36.3,                                   !- Maximum Dry-Bulb Temperature {C}
+  14.4,                                   !- Daily Dry-Bulb Temperature Range {deltaC}
+  17.5,                                   !- Humidity Indicating Conditions at Maximum Dry-Bulb
+  86779,                                  !- Barometric Pressure {Pa}
+  5.1,                                    !- Wind Speed {m/s}
+  340,                                    !- Wind Direction {deg}
+  0,                                      !- Sky Clearness
+  0,                                      !- Rain Indicator
+  0,                                      !- Snow Indicator
+  21,                                     !- Day of Month
+  7,                                      !- Month
+  SummerDesignDay,                        !- Day Type
+  0,                                      !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Indicating Type
+  ,                                       !- Humidity Indicating Day Schedule Name
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.44,                                   !- ASHRAE Taub {dimensionless}
+  1.968;                                  !- ASHRAE Taud {dimensionless}
+
+OS:SizingPeriod:DesignDay,
+  {18407cdd-51fb-4627-b57e-d1b1e4086e30}, !- Handle
+  Salt Lake City IntL Arpt  Isi Ann Clg .4% Condns WB=>MDB, !- Name
+  30.5,                                   !- Maximum Dry-Bulb Temperature {C}
+  14.4,                                   !- Daily Dry-Bulb Temperature Range {deltaC}
+  19.5,                                   !- Humidity Indicating Conditions at Maximum Dry-Bulb
+  86779,                                  !- Barometric Pressure {Pa}
+  5.1,                                    !- Wind Speed {m/s}
+  340,                                    !- Wind Direction {deg}
+  0,                                      !- Sky Clearness
+  0,                                      !- Rain Indicator
+  0,                                      !- Snow Indicator
+  21,                                     !- Day of Month
+  7,                                      !- Month
+  SummerDesignDay,                        !- Day Type
+  0,                                      !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Indicating Type
+  ,                                       !- Humidity Indicating Day Schedule Name
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.44,                                   !- ASHRAE Taub {dimensionless}
+  1.968;                                  !- ASHRAE Taud {dimensionless}
+
+OS:SizingPeriod:DesignDay,
+  {304cc019-d3af-4938-9fd3-db2a4b5430c9}, !- Handle
+  Salt Lake City IntL Arpt  Isi Ann Clg .4% Condns DP=>MDB, !- Name
+  22.9,                                   !- Maximum Dry-Bulb Temperature {C}
+  14.4,                                   !- Daily Dry-Bulb Temperature Range {deltaC}
+  16.4,                                   !- Humidity Indicating Conditions at Maximum Dry-Bulb
+  86779,                                  !- Barometric Pressure {Pa}
+  5.1,                                    !- Wind Speed {m/s}
+  340,                                    !- Wind Direction {deg}
+  0,                                      !- Sky Clearness
+  0,                                      !- Rain Indicator
+  0,                                      !- Snow Indicator
+  21,                                     !- Day of Month
+  7,                                      !- Month
+  SummerDesignDay,                        !- Day Type
+  0,                                      !- Daylight Saving Time Indicator
+  Dewpoint,                               !- Humidity Indicating Type
+  ,                                       !- Humidity Indicating Day Schedule Name
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.44,                                   !- ASHRAE Taub {dimensionless}
+  1.968;                                  !- ASHRAE Taud {dimensionless}
+
+OS:SizingPeriod:DesignDay,
+  {8cc36eeb-1a14-40d9-a8b2-ccbbfb51051c}, !- Handle
+  Salt Lake City IntL Arpt  Isi Ann Clg .4% Condns Enth=>MDB, !- Name
+  30.2,                                   !- Maximum Dry-Bulb Temperature {C}
+  14.4,                                   !- Daily Dry-Bulb Temperature Range {deltaC}
+  60600,                                  !- Humidity Indicating Conditions at Maximum Dry-Bulb
+  86779,                                  !- Barometric Pressure {Pa}
+  5.1,                                    !- Wind Speed {m/s}
+  340,                                    !- Wind Direction {deg}
+  0,                                      !- Sky Clearness
+  0,                                      !- Rain Indicator
+  0,                                      !- Snow Indicator
+  21,                                     !- Day of Month
+  7,                                      !- Month
+  SummerDesignDay,                        !- Day Type
+  0,                                      !- Daylight Saving Time Indicator
+  Enthalpy,                               !- Humidity Indicating Type
+  ,                                       !- Humidity Indicating Day Schedule Name
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.44,                                   !- ASHRAE Taub {dimensionless}
+  1.968;                                  !- ASHRAE Taud {dimensionless}
+
+OS:Output:Variable,
+  {8303787c-8301-4ba6-83c8-5785484237d0}, !- Handle
+  Output Variable 1,                      !- Name
+  *,                                      !- Key Value
+  System Node Setpoint Temperature,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {01d2035e-c553-4a8e-9427-3854b17af349}, !- Handle
+  Output Variable 2,                      !- Name
+  *,                                      !- Key Value
+  System Node Temperature,                !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {7d9130bf-9799-45da-b3a0-c6bc2551f2f8}, !- Handle
+  Output Variable 3,                      !- Name
+  *,                                      !- Key Value
+  Zone Air Temperature,                   !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {3cc20fee-c515-4894-9e05-9966099a0233}, !- Handle
+  Output Variable 4,                      !- Name
+  *,                                      !- Key Value
+  Zone Air System Sensible Cooling Rate,  !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {fd930ffa-36fd-4864-8b5b-f0ac228a291e}, !- Handle
+  Output Variable 5,                      !- Name
+  *,                                      !- Key Value
+  Zone Air System Sensible Heating Rate,  !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
